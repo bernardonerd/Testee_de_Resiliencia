@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    color:#323232;
+}
+
+#resps{
+    text-align: center;
+    color:#323232;
+}
+
+body{
+   background-color: #04b3c8;
+}
+
+p{
+    color:#323232;
+    font-size: 18px;
+}
+
+.button{
+    align-items: center;
+    color:#f4f7f8;
+    background-color: #52ab98;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 20px 28px;
+    font-size: 18px;
+}
+
+input{
+    background-color: aliceblue;
+}
+
+input ~ .botao{
+    background-color: #52ab98;
+}
+.botao{
+    text-align: center;
+    font-size:18px;
+    margin:auto;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+.div_img{
+    text-align:right;
+    right: 0%;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css"/>
+    <title>Teste de Resiliência</title>
+</head>
+<body>
+    <div class="div_img">
+        <img class="logo" src="/formulario/logo.png" alt="Logo"/>
+    </div>
+    <h1>Teste de Resiliência</h1>
+    <p>Resiliência é um conceito emprestado da física que significa a capacidade do indivíduo
+        em lidar com situações adversas, superar pressões, obstáculos e problemas, e reagir positivamente a eles sem entrar em conflito psicológico ou emocional. <br/>
+    </p>
+    <p>Resiliência é uma das características das pessoas altamente adaptáveis, capazes de enfrentarem
+        e superarem crises, obstáculos e adversidades com serenidade em situações de estresse.
+    </p>
+    <p>Conheça seu grau de resiliência preenchendo o questionário a seguir. Para que o resultado seja fidedigno use da máxima
+        sinceridade, e para cada afirmação atribua nota de 1 a 5 conforme abaixo. <br/>
+    </p>
+    <p id="resps"><strong>5 - Sempre </strong></p>
+    <p id="resps"><strong>4 - Na maioria das vezes </strong></p>
+    <p id="resps"><strong>3 - Medianamente </strong></p>
+    <p id="resps"><strong>2 - Poucas vezes </strong></p>
+    <p id="resps"><strong>1 - Nunca </strong></p>
+    <form onsubmit="pontuacao(event)" class="form">
+    <div class="pergs">
+    <p>1 - Eu consigo transformar situações adversas em algo positivo, e descobrir benefícios em 
+        experiências negativas. <input type="number" id="1" required min="1" max="5">
+    </p>
+    <p>2 - Quando acontece uma crise eu surjo com várias soluções, em vez de ficar sem saber
+        o que fazer. <input type="number" id="2" required min="1" max="5">
+    </p>
+    <p>3 - Eu tenho facilidade em resolver problemas. Conforme o caso, consigo ser criativo, ou lógico, ou então uso simplesmente o bom senso. <input type="number" id="3" required min="1" max="5">
+    </p>
+    <p>4 - Quando algo de realmente ruim acontece comigo considero natural, ocasionalmente, dar uma boa risada disso. <input type="number" id="4" required min="1" max="5">
+    </p>
+    <p>5 - Sou sempre o mesmo, mas percebo que em circunstâncias diferentes eu me comporto de forma diferente para me adaptar às várias situações. <input type="number" id="5" required min="1" max="5">
+    </p>
+    <p>6 - Quando enfrento uma situação caótica ou de conflito, imediatamente procuro me acalmar, e me concentro em adotar ações práticas e úteis <input type="number" id="6" required min="1" max="5">
+    </p>
+    <p>7 - Costumo encarar o futuro sem ansiedade ou preocupação. <input type="number" id="7" required min="1" max="5">
+    </p>
+    <p>8 - Quando fico preso no trânsito e sei que vou me atrasar para um compromisso, em vez de ficar agitado ou estressado, eu me mantenho calmo. <input type="number" id="8" required min="1" max="5">
+    </p>
+    <p>9 - Quando tenho perdas ou reveses, meus sentimentos de raiva, prejuízo ou frustração não duram muito tempo. Consigo recuperar-me bem dos reveses. <input type="number" id="9" required min="1" max="5">
+    </p>
+    <p>10 - lido bem com situações ambíguas e incertas. <input type="number" id="10" required min="1" max="5">
+    </p>
+    <p>11 - Sou curioso. Faço perguntas. Gosto de tentar novas formas de fazer as coisas. <input type="number" id="11" required min="1" max="5">
+    </p>
+    <p>12 - Depois de passada a crise, costumo perguntar o que aprendi de novo com ela.<input type="number" id="12" required min="1" max="5">
+    </p>
+    <p>13 - Todas as vezes que enfrento experiências difíceis e complicadads eu saio delas fortalecido e melhorado.<input type="number" id="13" required min="1" max="5">
+    </p>
+    <p>14 - Eu me adapto rapidamente às novas circunstâncias e acontecimentos. Tenho facilidade de reposicionar-me diante das dificuldades.<input type="number" id="14" required min="1" max="5">
+    </p>
+    <p>15 - Sou habitualmente otimista. Considero as dificuldades e adversidades como algo temporário e confio que vou superá-las.<input type="number" id="15" required min="1" max="5">
+    </p>
+    <p>16 - Sou flexível e sei enfrentar muito bem tempos difíceis.<input type="number" id="16" required min="1" max="5">
+    </p>
+    <p>17 - Quando algo de ruim acontece comigo, prefiro manter-me em contato com as pessoas, em vez de me encolher e ficar ruminando meus pensamentos.<input type="number" id="17" required min="1" max="5">
+    </p>
+    <p>18 - Eu me adapto facilmente às pessoas com personalidades diferentes da minha.<input type="number" id="18" required min="1" max="5">
+    </p>
+    <p>19 - Sou autoconfiante e tenho um conceito saudável de mim mesmo.<input type="number" id="19" required min="1" max="5">
+    </p>
+    <p>20 - Rejeito a ideia de que sou vítima das consequências ou que são elas que controlam a minha vida.<input type="number" id="20" required min="1" max="5">
+    </p>
+    </div>
+    <div class="botao"><input class="button" type="submit" value="Calcular" onclick="pontuacao()"></div>
+    </form>
+    <p id="res"><strong>TOTAL DE PONTOS: </strong></p>
+    <script src="codigo.js"></script>
+  
+    
+</body>
+</html>
